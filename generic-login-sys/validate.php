@@ -10,11 +10,11 @@
 		
 		if($email == $myemail && $password == $mypassword) {
 			if( isset($_POST['remember']) ):
-				setcookie('email', $email, time()*60*60*7);
-				session_start();
+				setcookie('email', $email, time()*60*60*7);	
+			endif;
+			session_start();
 				$_SESSION['email'] = $email;
 				header("location: welcome.php");
-			endif;
 		} else {
 			echo "Email or Password is Invalid. <br> click <a href=\"login.php\">here</a> to try again";
 		}
