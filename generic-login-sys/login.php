@@ -1,3 +1,13 @@
+<?php 
+	if(isset($_COOKIE['email']) && isset($_COOKIE['password'])) {
+		$email = $_COOKIE['email'];
+		$password = $_COOKIE['password'];
+		echo "<script>
+			document.getElementById('email').value = '$email';
+			document.getElementById('password').value = '$password';
+		</script>";
+	}
+?>
 <form method="post" action="validate.php">
 <fieldset>
 <legend>Login to the system</legend>
