@@ -1,4 +1,6 @@
 <form method="post" action="validate.php">
+<fieldset>
+<legend>Login to the system</legend>
 	<div class="group email">
 		<p>
 			<label for="email">Email</label>
@@ -22,4 +24,5 @@
 	<p>
 		<input type="submit" value="login" name="login">
 	</p>
+</fieldset>
 </form>
