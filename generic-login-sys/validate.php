@@ -11,6 +11,8 @@
 		if($email == $myemail && $password == $mypassword) {
 			if( isset($_POST['remember']) ):
 				setcookie('email', $email, time()*60*60*7);
+				session_start();
+				$_SESSION['email'] = $email;
 				header("location: welcome.php");
 			endif;
 		} else {
