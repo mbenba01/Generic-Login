@@ -13,8 +13,8 @@
 				setcookie('email', $email, time()*60*60*7);	
 			endif;
 			session_start();
-				$_SESSION['email'] = $email;
-				header("location: welcome.php");
+			$_SESSION['email'] = $email;
+			header("location: welcome.php");
 		} else {
 			echo "Email or Password is Invalid. <br> click <a href=\"login.php\">here</a> to try again";
 		}
