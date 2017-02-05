@@ -6,7 +6,7 @@
 			<label for="email">Email</label>
 		</p>
 		<p>
-			<input type="email" name="email" required placeholder="email">
+			<input type="email" name="email" placeholder="email">
 		</p>
 	</div>
 	<div class="group password">
@@ -14,7 +14,7 @@
 			<label for="email">Password</label>
 		</p>
 		<p>
-			<input type="password" name="password" required
+			<input type="password" name="password" 
 				placeholder="password">
 		</p>
 	</div>
