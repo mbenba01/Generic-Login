@@ -7,7 +7,7 @@
 		$email = $_POST['email'];
 		$password = $_POST['password'];	
 		
-		if($email == $myemail and $password == $mypassword) {
+		if($email == $myemail && $password == $mypassword) {
 				
 			if( isset($_POST['remember']) ) {
 				
