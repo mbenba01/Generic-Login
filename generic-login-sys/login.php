@@ -6,20 +6,20 @@
 			<label for="email">Email</label>
 		</p>
 		<p>
-			<input type="email" name="email" placeholder="email">
+			<input type="email" name="email" id="name" placeholder="email">
 		</p>
 	</div>
 	<div class="group password">
 		<p>
-			<label for="email">Password</label>
+			<label for="password">Password</label>
 		</p>
 		<p>
 			<input type="password" name="password" 
-				placeholder="password">
+				id="password"placeholder="password">
 		</p>
 	</div>
 	<p>
-		<input type="checkbox" name="remember" value="0">Remember Me
+		<input type="checkbox" name="remember" value="1">Remember Me
 	</p>
 	<p>
 		<input type="submit" value="login" name="login">
@@ -36,9 +36,10 @@
 		
 		echo "<script>
 				
-		alert('$password');
-			document.getElementById('email').value = '$email';
+			alert('$email');
+			document.getElementById('name').value = '$email';
 			document.getElementById('password').value = '$password';
+					
 		</script>";
 	}
 ?>

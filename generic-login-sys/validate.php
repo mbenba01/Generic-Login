@@ -1,4 +1,5 @@
 <?php
+
 	$myemail = "m.benbaziz@hotmail.co.uk";
 	$mypassword = "password";
 	
@@ -7,9 +8,9 @@
 		$email = $_POST['email'];
 		$password = $_POST['password'];	
 		
-		if($email == $myemail && $password == $mypassword) {
+		if($email === $myemail && $password === $mypassword) {
 				
-			if( isset($_POST['remember']) ) {
+			if( isset($_POST['remember']) == '1' ) {
 				
 				setcookie('email', $email, time()+60*60*7);
 				setcookie('password', $password, time()+60*60*7);
